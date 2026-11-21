@@ -7,7 +7,7 @@
 <p align="center">
   <b>Tous vos e-mails dans une seule fenêtre. Et ils restent chez vous.</b><br>
   La messagerie gratuite pour Windows qui réunit Gmail, Outlook.com et tous vos comptes,<br>
-  avec calendrier, contacts, tâches en tableaux et bloc-notes. Sans abonnement, sans publicité, sans serveur intermédiaire.
+  avec calendrier synchronisé avec Google Agenda ou Outlook, contacts, tâches en tableaux et bloc-notes. Sans abonnement, sans publicité, sans serveur intermédiaire.
 </p>
 
 <p align="center">
@@ -102,7 +102,7 @@ Blocs-notes, sections, pages et sous-pages, comme dans un classeur. **Titres, li
 | Calendrier | Contacts |
 |---|---|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/calendrier-sombre.webp"><img src="docs/calendrier.webp" alt="Calendrier de MailToGo"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/contacts-sombre.webp"><img src="docs/contacts.webp" alt="Contacts de MailToGo"></picture> |
-| Vues jour, semaine de travail, semaine, mois et planification. Rendez-vous répétitifs, réunions, **rappels avec notification**, import et export `.ics`. | Carnet d'adresses complet en vues Personnes, Cartes, Liste ou Téléphone, **synchronisé avec votre téléphone**. Import `.vcf`, **saisie automatique** des destinataires, écrire ou planifier une réunion en un clic. |
+| Vues jour, semaine de travail, semaine, mois et planification. Rendez-vous répétitifs, réunions, **rappels avec notification**, import et export `.ics`, **synchronisé avec Google Agenda et Outlook**. | Carnet d'adresses complet en vues Personnes, Cartes, Liste ou Téléphone, **synchronisé avec votre téléphone**. Import `.vcf`, **saisie automatique** des destinataires, écrire ou planifier une réunion en un clic. |
 
 ## Vos contacts synchronisés avec votre téléphone
 
@@ -119,6 +119,18 @@ Reliez le carnet d'adresses de votre téléphone et retrouvez les mêmes contact
 Ensuite, la synchronisation se fait **toute seule** toutes les 15 minutes et peu après chaque modification (désactivable). Si elle devait supprimer plusieurs contacts d'un coup, elle s'arrête et vous demande votre accord.
 
 Dans le volet de gauche des Contacts : **Tous les contacts**, ceux qui sont **sur ce PC uniquement**, et un dossier par compte synchronisé, chacun avec son nombre de contacts.
+
+## Votre agenda synchronisé avec Google Agenda et Outlook
+
+Reliez **un ou plusieurs comptes Google ou Microsoft** (Outlook.com, Hotmail, Live, Microsoft 365) et choisissez les agendas à synchroniser (principal, Famille, Jours fériés…) : un rendez-vous ajouté, modifié ou supprimé d'un côté l'est aussi de l'autre. Chaque agenda a son propre calendrier dans MailToGo, que vous affichez ou masquez d'une case à cocher.
+
+- Séries répétitives, journées entières, rappels, disponibilité (occupé / libre) et caractère privé sont synchronisés.
+- Ce que MailToGo ne gère pas (couleur, visioconférence, pièces jointes) reste intact dans Google Agenda et Outlook.
+- Une série modifiée depuis un de ses jours garde ses dates ; vous pouvez supprimer un seul jour d'une série.
+- Les agendas partagés en **lecture seule** (jours fériés, anniversaires) sont reçus et s'ouvrent en consultation.
+- Une invitation reçue d'un autre organisateur n'est jamais renvoyée à sa place, et si Google ou Microsoft redemande votre autorisation, un clic sur **Reconnecter** suffit, sans doublons.
+
+**Rien ne change sans votre accord** : avant chaque synchronisation que vous lancez, MailToGo montre le compte, les agendas choisis et la liste de ce qui va être ajouté, modifié ou supprimé de chaque côté, puis attend votre confirmation. Ensuite, la synchronisation se fait **toute seule**, au rythme que vous choisissez pour chaque compte (de 5 minutes à une fois par jour, ou seulement à la demande ; 15 minutes par défaut), et peu après chaque modification ; si elle devait supprimer plusieurs rendez-vous d'un coup, elle s'arrête et vous demande votre accord.
 
 ## Clair ou sombre, à votre goût
 
@@ -146,7 +158,7 @@ Tout se règle dans le menu **Affichage** : présentation de la liste, conversat
 - **Mots de passe et autorisations chiffrés** par Windows ; connexions toujours chiffrées.
 - **Ni publicité, ni statistiques d'utilisation, ni intelligence artificielle** qui lirait vos messages.
 - Images à distance et **pixels de suivi** bloquables dans les options.
-- Accès Google et Microsoft limité à la messagerie : vos contacts seulement si vous activez leur synchronisation, jamais votre agenda ni vos fichiers.
+- Accès Google et Microsoft limité à la messagerie : vos contacts et votre agenda seulement si vous activez leur synchronisation, jamais vos fichiers.
 
 Tous les détails : [règles de confidentialité](https://leturfu.com/mailtogo/confidentialite.html).
 
@@ -202,7 +214,12 @@ Il attend dans la boîte d'envoi et part tout seul dès que la connexion revient
 
 <details><summary><b>Comment retrouver les contacts de mon téléphone ?</b></summary>
 
-Dans **Contacts**, cliquez sur le bouton téléphone en haut du volet de gauche, puis choisissez **Google Contacts** (Android), **iCloud** (iPhone), **Microsoft**, **o2switch / hébergeur cPanel** ou **CardDAV**. MailToGo vous montre ce qui va être ajouté avant de faire quoi que ce soit. Pour iCloud, il faut un « mot de passe pour app » créé sur appleid.apple.com.
+Dans **Contacts**, cliquez sur **Relier un téléphone…** dans le volet de gauche, puis choisissez **Google Contacts** (Android), **iCloud** (iPhone), **Microsoft**, **o2switch / hébergeur cPanel** ou **CardDAV**. MailToGo vous montre ce qui va être ajouté avant de faire quoi que ce soit. Pour iCloud, il faut un « mot de passe pour app » créé sur appleid.apple.com.
+</details>
+
+<details><summary><b>Puis-je synchroniser mon calendrier avec Google Agenda ou Outlook ?</b></summary>
+
+Oui, avec un ou plusieurs comptes Google ou Microsoft. Dans **Calendrier**, cliquez sur **Synchroniser avec Google ou Outlook** dans le volet de gauche, choisissez le service, le compte puis les agendas. MailToGo vous montre ce qui va changer et attend votre confirmation.
 </details>
 
 <details><summary><b>Comment changer le thème ou la langue ?</b></summary>
@@ -219,7 +236,7 @@ Retirez le compte dans **Comptes > Paramètres des comptes** : sa copie locale e
 
 - Windows 10 et 11 (64 bits) uniquement.
 - Comptes IMAP/SMTP : pas de POP3 ni d'Exchange en direct (EWS). Pour Microsoft 365, l'accès IMAP doit être autorisé par l'administrateur.
-- Les contacts se synchronisent avec Google, iCloud, Microsoft ou un serveur CardDAV. Le calendrier, les tâches et les notes restent sur le PC, sans synchronisation avec Google Agenda ou Outlook.com : pensez à la sauvegarde.
+- Les contacts se synchronisent avec Google, iCloud, Microsoft ou un serveur CardDAV, et le calendrier avec Google Agenda ou Outlook. Les tâches et les notes restent sur le PC : pensez à la sauvegarde.
 - Les règles s'appliquent pendant que MailToGo est ouvert. Les réponses automatiques aussi, sauf quand elles sont réglées sur le serveur (Gmail, Microsoft, o2switch et hébergeurs cPanel, serveurs Sieve) : elles partent alors même PC éteint.
 - L'import Outlook demande Outlook classique (pas le nouvel Outlook).
 
