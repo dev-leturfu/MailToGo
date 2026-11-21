@@ -37,6 +37,7 @@
 |---|---|
 | **Une seule fenêtre pour tout** | Gmail, Outlook.com, Microsoft 365, Yahoo, iCloud, Orange, Free, SFR, La Poste, GMX… Ajoutez autant de comptes que vous voulez et lisez-les ensemble dans une boîte de réception unifiée. |
 | **Votre journée organisée** | Courrier, calendrier, contacts, tâches et notes au même endroit, avec un résumé de ce qui compte aujourd'hui. |
+| **Vos contacts partout** | Les contacts de votre téléphone (Android ou iPhone) synchronisés dans les deux sens : Google Contacts, iCloud, Microsoft, o2switch et tout serveur CardDAV. |
 | **Vos données restent chez vous** | Aucun serveur MailToGo : vos messages vont directement de votre fournisseur à votre PC. Ni publicité, ni statistiques, ni intelligence artificielle. |
 | **Rien ne se perd** | Brouillons enregistrés, annulation de l'envoi, boîte d'envoi qui patiente sans Internet, sauvegarde complète en un fichier. |
 | **À votre image** | 10 thèmes clairs ou sombres, 9 langues, une interface simple et rapide. |
@@ -59,9 +60,11 @@ En haut de la fenêtre, quatre cartes résument ce qui compte : **messages non l
 - **Connexion sécurisée** à Google et Microsoft sur leur page officielle : MailToGo ne voit jamais votre mot de passe.
 - **Boîte de réception unifiée**, conversations, boîte Prioritaire, catégories en couleur, indicateurs de suivi, importance.
 - **Recherche instantanée** par expéditeur, objet ou contenu, dans un dossier, un compte ou partout.
-- **Règles et actions rapides** : classez, catégorisez et transférez automatiquement, regroupez plusieurs gestes en un clic, bloquez les expéditeurs indésirables, activez vos réponses d'absence.
+- **Règles et actions rapides** : classez, catégorisez et transférez automatiquement, regroupez plusieurs gestes en un clic, bloquez les expéditeurs indésirables.
+- **Réponses d'absence** pour un ou plusieurs comptes, réglées directement chez Gmail, Microsoft, o2switch et les hébergeurs cPanel ou les serveurs Sieve : elles partent même quand votre PC est éteint.
+- **Un message dans sa propre fenêtre** (ou incrusté dans MailToGo, au choix) : double-cliquez pour le lire, et répondez depuis la même fenêtre.
 - **Signatures, modèles, papier à lettres**, accusés de lecture, impression et enregistrement en PDF.
-- **Notifications Windows** pour chaque nouveau message, et compteur sur l'icône de la barre des tâches.
+- **Notifications Windows** pour chaque nouveau message, avec le **son de votre choix** (MP3, WAV, AAC…), et compteur des non lus sur l'icône de la barre des tâches.
 
 ## Écrire sans rien perdre
 
@@ -99,7 +102,23 @@ Blocs-notes, sections, pages et sous-pages, comme dans un classeur. **Titres, li
 | Calendrier | Contacts |
 |---|---|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/calendrier-sombre.webp"><img src="docs/calendrier.webp" alt="Calendrier de MailToGo"></picture> | <picture><source media="(prefers-color-scheme: dark)" srcset="docs/contacts-sombre.webp"><img src="docs/contacts.webp" alt="Contacts de MailToGo"></picture> |
-| Vues jour, semaine de travail, semaine, mois et planification. Rendez-vous répétitifs, réunions, **rappels avec notification**, import et export `.ics`. | Carnet d'adresses complet en vues Personnes, Cartes, Liste ou Téléphone. Import `.vcf`, **saisie automatique** des destinataires, écrire ou planifier une réunion en un clic. |
+| Vues jour, semaine de travail, semaine, mois et planification. Rendez-vous répétitifs, réunions, **rappels avec notification**, import et export `.ics`. | Carnet d'adresses complet en vues Personnes, Cartes, Liste ou Téléphone, **synchronisé avec votre téléphone**. Import `.vcf`, **saisie automatique** des destinataires, écrire ou planifier une réunion en un clic. |
+
+## Vos contacts synchronisés avec votre téléphone
+
+Reliez le carnet d'adresses de votre téléphone et retrouvez les mêmes contacts partout : un contact ajouté, modifié ou supprimé d'un côté l'est aussi de l'autre.
+
+- **Google Contacts** : téléphones Android, et iPhone réglé sur Gmail.
+- **iCloud** : iPhone, iPad et Mac.
+- **Microsoft** : Outlook.com, Hotmail, Live et Microsoft 365.
+- **o2switch et les hébergeurs cPanel**, avec l'adresse e-mail déjà ajoutée dans MailToGo.
+- **Tout serveur CardDAV** : Nextcloud, Synology, Fastmail, Infomaniak…
+
+**Rien ne change sans votre accord** : avant chaque synchronisation que vous lancez, et avant chaque import d'un fichier `.vcf`, MailToGo montre le compte choisi et la liste de ce qui va être ajouté, rassemblé, modifié ou supprimé, puis attend votre confirmation. Les contacts présents des deux côtés sont **rassemblés sans doublon**, et les photos ou champs personnalisés de votre téléphone sont conservés.
+
+Ensuite, la synchronisation se fait **toute seule** toutes les 15 minutes et peu après chaque modification (désactivable). Si elle devait supprimer plusieurs contacts d'un coup, elle s'arrête et vous demande votre accord.
+
+Dans le volet de gauche des Contacts : **Tous les contacts**, ceux qui sont **sur ce PC uniquement**, et un dossier par compte synchronisé, chacun avec son nombre de contacts.
 
 ## Clair ou sombre, à votre goût
 
@@ -127,7 +146,7 @@ Tout se règle dans le menu **Affichage** : présentation de la liste, conversat
 - **Mots de passe et autorisations chiffrés** par Windows ; connexions toujours chiffrées.
 - **Ni publicité, ni statistiques d'utilisation, ni intelligence artificielle** qui lirait vos messages.
 - Images à distance et **pixels de suivi** bloquables dans les options.
-- Accès Microsoft limité à la messagerie : ni votre calendrier, ni vos contacts, ni vos fichiers.
+- Accès Google et Microsoft limité à la messagerie : vos contacts seulement si vous activez leur synchronisation, jamais votre agenda ni vos fichiers.
 
 Tous les détails : [règles de confidentialité](https://leturfu.com/mailtogo/confidentialite.html).
 
@@ -181,6 +200,11 @@ Non. Vous vous connectez sur la page officielle de Google ou de Microsoft ; Mail
 Il attend dans la boîte d'envoi et part tout seul dès que la connexion revient.
 </details>
 
+<details><summary><b>Comment retrouver les contacts de mon téléphone ?</b></summary>
+
+Dans **Contacts**, cliquez sur le bouton téléphone en haut du volet de gauche, puis choisissez **Google Contacts** (Android), **iCloud** (iPhone), **Microsoft**, **o2switch / hébergeur cPanel** ou **CardDAV**. MailToGo vous montre ce qui va être ajouté avant de faire quoi que ce soit. Pour iCloud, il faut un « mot de passe pour app » créé sur appleid.apple.com.
+</details>
+
 <details><summary><b>Comment changer le thème ou la langue ?</b></summary>
 
 Menu **Affichage > Thème** et **Affichage > Langue** : le changement est immédiat.
@@ -195,8 +219,8 @@ Retirez le compte dans **Comptes > Paramètres des comptes** : sa copie locale e
 
 - Windows 10 et 11 (64 bits) uniquement.
 - Comptes IMAP/SMTP : pas de POP3 ni d'Exchange en direct (EWS). Pour Microsoft 365, l'accès IMAP doit être autorisé par l'administrateur.
-- Le calendrier, les contacts, les tâches et les notes sont gardés sur le PC, sans synchronisation avec Google Agenda ou Outlook.com : pensez à la sauvegarde.
-- Les réponses automatiques et les règles s'appliquent pendant que MailToGo est ouvert.
+- Les contacts se synchronisent avec Google, iCloud, Microsoft ou un serveur CardDAV. Le calendrier, les tâches et les notes restent sur le PC, sans synchronisation avec Google Agenda ou Outlook.com : pensez à la sauvegarde.
+- Les règles s'appliquent pendant que MailToGo est ouvert. Les réponses automatiques aussi, sauf quand elles sont réglées sur le serveur (Gmail, Microsoft, o2switch et hébergeurs cPanel, serveurs Sieve) : elles partent alors même PC éteint.
 - L'import Outlook demande Outlook classique (pas le nouvel Outlook).
 
 *Captures réalisées avec des données d'exemple : tous les noms, adresses et contenus sont fictifs.*
