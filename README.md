@@ -24,6 +24,15 @@ MailToGo vérifie au démarrage, puis une fois par jour, si une nouvelle version
 - Désactiver la vérification automatique : **Options > Options avancées > Mises à jour**.
 - « Ignorer cette version » ne propose plus cette version-là, seulement les suivantes.
 
+## Clair ou sombre
+
+10 thèmes de couleurs, ou celui de Windows (clair ou sombre automatiquement) : menu **Affichage > Thème**. Les messages peuvent aussi s'afficher sur fond sombre.
+
+| Thème clair (Blanc) | Thème sombre (Nuit) |
+|---|---|
+| <img src="docs/boite-unifiee.webp" alt="MailToGo avec le thème clair Blanc"> | <img src="docs/boite-unifiee-sombre.webp" alt="MailToGo avec le thème sombre Nuit"> |
+| <img src="docs/taches.webp" alt="Tâches avec le thème clair"> | <img src="docs/taches-sombre.webp" alt="Tâches avec le thème sombre"> |
+
 ## Organisation de l'interface
 
 - Barre du haut : nom des comptes et état de la synchronisation, recherche, les 5 modules (Courrier, Calendrier, Contacts, Tâches, Notes) avec leur compteur, rappels et options.
