@@ -10,7 +10,9 @@ Gratuit, en 9 langues, sans serveur intermédiaire : vos e-mails vont directemen
 
 ## Installer
 
-Télécharger `MailToGo-Setup-2.0.0.exe` dans les [Releases](https://github.com/dev-leturfu/MailToGo/releases/latest), puis le lancer. L'installateur s'affiche dans la langue de Windows ; rien d'autre à installer.
+Télécharger l'installateur `MailToGo-Setup-….exe` de la [dernière version](https://github.com/dev-leturfu/MailToGo/releases/latest) (rubrique *Assets*), puis le lancer. L'installateur s'affiche dans la langue de Windows ; rien d'autre à installer.
+
+Déjà installé ? Inutile de revenir ici : MailToGo propose tout seul les nouvelles versions (voir ci-dessous).
 
 Au premier lancement, MailToGo propose d'ajouter un compte (les réglages sont trouvés automatiquement) ou d'importer, une seule fois, ce que vous aviez dans Outlook.
 
